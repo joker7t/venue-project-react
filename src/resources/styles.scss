@@ -256,6 +256,10 @@ footer .footer_copyright {
         HIGHLIGHTS
 ======================*/
 
+.highlight_wrapper{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 .highlight_wrapper h2 {
     text-align: center;
@@ -271,6 +275,7 @@ footer .footer_copyright {
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     padding: 30px 0px;
+    text-align: justify;
 }
 
 .discount_wrapper {
@@ -279,10 +284,11 @@ footer .footer_copyright {
 }
 
 .discount_wrapper .discount_porcentage {
-    padding-right: 100px;
+    text-align: center;
 }
 
 .discount_wrapper .discount_porcentage span:nth-child(1) {
+    margin: auto;
     color: #ff4800;
     font-size: 125px;
     font-weight: 400;
@@ -295,6 +301,7 @@ footer .footer_copyright {
     font-size: 50px;
     font-weight: 400;
     display: block;
+    width: 100%;
 }
 
 
@@ -309,6 +316,7 @@ footer .footer_copyright {
     line-height: 30px;
     font-size: 18px;
     font-weight: 300;
+    text-align: justify;
 }
 
 /*====================
