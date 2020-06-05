@@ -23,7 +23,7 @@ const Carrousel = () => {
             }}
         >
 
-            <Slider {...settings} className="haha">
+            <Slider {...settings}>
                 <div>
                     <div
                         className='carrousel_image'
@@ -51,7 +51,7 @@ const Carrousel = () => {
                         className='carrousel_image'
                         style={{
                             background: `url(${slide_three})`,
-                            height: '100vh',
+                            height: '100vh'
                         }}
                     >
                     </div>

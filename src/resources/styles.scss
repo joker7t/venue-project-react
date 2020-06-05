@@ -1,4 +1,8 @@
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     padding:0;
     margin:0;
@@ -28,7 +32,7 @@ body {
 }
 
 .center_wrapper {
-    width: 900px;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -89,24 +93,35 @@ footer .footer_copyright {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
     height: 160px;
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
     border: 2px solid white;
+    padding: 5px;
 }
 
 .artist_name .wrapper {
     border: 2px solid white;
-    height: 121px;
-    margin: 6px;
-    text-align: center;
     color: #fff;
-    font-size: 40px;
-    padding: 21px 70px 0px 70px;
     text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
 }
 
+@media (min-width: 768px) {
+    .artist_name {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .artist_name {
+        width: 50%;
+    }
+}
 /*====================
         COUNTDOWN
 ======================*/
@@ -117,34 +132,57 @@ footer .footer_copyright {
     color:#ffffff;
 }
 
-.countdown_wrapper .countdown_top {
-    background: #ff4800;
-    font-size: 19px;
-    padding: 10px;
-    display: inline-block;
-    text-transform: uppercase;
+.countdown_wrapper {
+    .countdown_top {
+        background: #ff4800;
+        font-size: 19px;
+        padding: 10px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .countdown_bottom {
+        display: flex;
+        background: #d93d00;
+        padding: 10px 20px;
+    }
+
+    .countdown_time {
+        border-right: 1px solid #F44336;
+    }
+
+    .countdown_tag {
+        text-transform: uppercase;
+        padding-left: 7px;
+    }
 }
 
-.countdown_wrapper .countdown_bottom {
-    display: flex;
-    background: #d93d00;
-    padding: 10px 20px;
+@media (min-width: 768px) {
+    .countdown_time {
+        font-size: 70px;
+        margin-right: 14px;
+        padding-right: 49px;
+    }
+
+    .countdown_tag {
+        font-size: 20px;
+    }
 }
 
-.countdown_wrapper .countdown_time {
-    font-size: 70px;
-    border-right: 1px solid #F44336;
-    margin-right: 14px;
-    padding-right: 49px;
+@media (max-width: 767px) {
+    .countdown_time {
+        font-size: 30px;
+        margin-right: 7px;
+        padding-right: 29px;
+    }
+
+    .countdown_tag {
+        font-size: 8px;
+    }
 }
+
 .countdown_wrapper .countdown_item:last-child .countdown_time{
     border:none;
-}
-
-.countdown_wrapper .countdown_tag {
-    text-transform: uppercase;
-    font-size: 20px;
-    padding-left: 7px;
 }
 
 /*====================
@@ -153,13 +191,13 @@ footer .footer_copyright {
 
 .vn_wrapper {
     display: flex;
-    padding: 170px 0px;
+    padding: 150px 0px;
 }
 
 .vn_item {
-    width:50%;
     color:#ffffff;
     text-align: center;
+    margin: 40px auto 40px auto !important;
 }
                       
 .vn_item .vn_outer {

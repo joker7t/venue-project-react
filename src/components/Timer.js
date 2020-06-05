@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Slide from 'react-reveal/Slide';
 
 const Timer = () => {
+    //eslint-disable-next-line
     const [deadLine, setDeadLine] = useState('Oct, 1, 2020');
     const [days, setDays] = useState('0');
     const [hours, setHours] = useState('0');
