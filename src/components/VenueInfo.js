@@ -52,7 +52,8 @@ const VenueInfo = () => {
                                     </div>
                                 </div>
                             </Zoom>
-                        </Grid>                    </Grid>
+                        </Grid>
+                    </Grid>
                 </div>
             </div>
 
