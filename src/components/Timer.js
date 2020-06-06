@@ -28,7 +28,7 @@ const Timer = () => {
     }
 
     return (
-        <Slide left delay='1000'>
+        <Slide left delay={1000}>
             <div className='countdown_wrapper'>
                 <div className='countdown_top'>
                     Event starts in

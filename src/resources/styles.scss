@@ -281,6 +281,9 @@ footer .footer_copyright {
 .discount_wrapper {
     display: flex;
     padding: 70px 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .discount_wrapper .discount_porcentage {
@@ -324,7 +327,7 @@ footer .footer_copyright {
 ======================*/
 
 .pricing_section {
-    padding: 70px 0px;
+    padding: 70px 30px;
 }
 
 
@@ -336,15 +339,8 @@ footer .footer_copyright {
     margin: 0;
 }
 
-.pricing_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
 .pricing_wrapper .pricing_item{
-    flex-grow: 1;
-    width: 33%;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .pricing_wrapper .pricing_inner_wrapper {
